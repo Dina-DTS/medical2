@@ -1,0 +1,147 @@
+                                                     /* تاسك 33 */
+
+table{
+    width: 700px;
+    margin: 20px auto;
+    
+    
+}
+table thead td{
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    background-color: #404040;
+    padding: 10px;
+
+
+}
+table td {
+    padding: 5px;
+    background-color: #eee;
+    border-spacing: 1px;
+    text-align: center;
+}
+.view,
+.delete{
+    padding: 2px 4px;
+    border: 1px ;
+    margin: 3px;
+    color: white;
+}
+.view{
+    background-color:#03a9f4;
+}
+.delete{
+    background-color: #e91e63;
+}
+caption{
+    color: rgb(27, 24, 24);
+    font-weight: bold;
+}
+
+                                                                        /* تاسك 37-34 */
+                                                                        
+  .parent div{
+    width: 300px;
+    height: 60px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+  }    
+  .one{
+    background-color: #eee;
+    line-height: 55px;
+
+  }   
+  .three{
+    background-color: #eee;
+    line-height: 55px; 
+  }                                                             
+.two:empty{
+    background-color: red;
+}
+
+.parent1{
+    background-color:rgb(212, 209, 209);
+    width: 300px;
+    height: 50px;
+    line-height: 55px;
+    font-weight: bold;
+    margin: 20px auto;
+    text-align: center;
+    position:relative;
+}
+.parent1::first-letter{
+   
+    background-color: #f44336;
+    color: white;
+    position: absolute;
+    padding: 10px 5px;
+    float: left;
+    margin-left: -9px;
+    margin-top:10px;
+}
+
+
+
+.parent2 p{
+    background-color: antiquewhite;
+    width: 350px;
+    padding: 10px;
+    margin: 20px auto;
+    position: relative;
+    border-left: 5px solid #e91e63;
+}
+.parent2 p::before {
+    content: attr(data-person);
+    background-color: #eee;
+    position: absolute;
+    left: -100px;
+    padding: 10px;
+    top: 0px;
+    width: 50px;
+    
+}
+.parent2 p::after {
+    content: "";
+    position: absolute;
+    border: 10px solid;
+    height: 0;
+    width: 0;
+    border-color: transparent #e91e63 transparent transparent;
+    float: left;
+    left: -23px;
+    top: 10px;
+} 
+
+
+.parent3 p{
+    background-color: #eee;
+    width: 350px;
+    padding: 10px;
+    margin: 30px auto;
+    position: relative;
+    counter-increment: counter;
+}
+.parent3 p::before{
+    content: counter(counter);
+    background-color: #f84336;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    float: left;
+    left: -28px;
+    top: 0px;
+}
+.parent3 p::after{
+    content: "";
+    background-color: #f84336;
+    position: absolute;
+    height: 39px;
+    width: 5px;
+    float: right;
+    right: -3px;
+    top: 0;
+}
+
